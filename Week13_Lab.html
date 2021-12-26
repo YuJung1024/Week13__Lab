@@ -4,8 +4,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<style>
-		
+	<style type="text/css">
+		#wrapper{
+			box-sizing: border-box;
+			border: 3px solid;
+			text-align: center;
+			background-color: aliceblue;
+			border-radius: 6px;
+		}
+		input[type="text"]{
+			width: 150px;
+			height: 20px;
+		}
+		input[type="button"]{
+			width: 150px;
+			height: 20px;
+		}
+		#choice{
+			width: 150px;
+			height: 20px;
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
@@ -33,15 +52,13 @@ var c=document.getElementById("choice");
 }
 </script>
 
-<table border="1" width="450">
-<tr align="center"><th>
+<div id="wrapper">
 <h1>JS calculator</h1>
 <p>Number 1</p>
 <input name="number1" type="text" size=10 id='num1' />
 <p>Number 2</p>
 <input name="number2" type="text" size=10 id='num2'/>
 <p>Operate way?</p>
-
 <select name="operater" id="choice">
 <option value="plus">+</option>
 <option value="minus">-</option>
@@ -49,11 +66,9 @@ var c=document.getElementById("choice");
 <option value="divide">/</option>
 </select>
 <br><br>
-<button type="Add" onclick="showresult()">Add</button>
+<input type="button" name="Add" value="add" onclick="showresult()">
 <h1 id="result"></h1>
-
-</th></tr>
-</table>
+</div>
 
                                   
 
